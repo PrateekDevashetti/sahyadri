@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".BookAcivity">
+    <TextView
+        android:id="@+id/bookhospname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location of hospital"
+        android:textColor="@color/blackg"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/bookhome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Book an Appointment"
+        android:textColor="@color/blackg"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="@+id/bookhospname_tv"
+        app:layout_constraintTop_toBottomOf="@+id/bookhospname_tv" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etdoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Type of Doctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookhome_tv" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etdesc"
+        android:hint="Details (if you have any)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etdoctor"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/desctv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="This will allow you to get a token and \nthen confirm your booking"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/etdesc"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/bookbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Book Now"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

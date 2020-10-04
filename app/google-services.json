@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "33545275480",
+    "firebase_url": "https://ivyhack-oreo.firebaseio.com",
+    "project_id": "ivyhack-oreo",
+    "storage_bucket": "ivyhack-oreo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33545275480:android:50f54aa6384676fcb8622d",
+        "android_client_info": {
+          "package_name": "com.example.hospqueue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33545275480-m2k7bk8bvpn3l84obbtkngn1gpvundj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDetZCEa7GOH4R5b_gdi1R0WCQa1nKRc2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33545275480-m2k7bk8bvpn3l84obbtkngn1gpvundj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

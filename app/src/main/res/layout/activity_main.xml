@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity"
+    tools:ignore="UnknownId">
+
+    <TextView
+        android:id="@+id/hospname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location of hospital"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/signout_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Sign Out"
+        android:textColor="@color/blackg"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/home_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Home"
+        android:textColor="@color/blackg"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="@+id/hospname_tv"
+        app:layout_constraintTop_toBottomOf="@+id/hospname_tv" />
+    <Button
+        android:id="@+id/scanningbtn"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_scan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/home_tv"
+        app:layout_constraintTop_toBottomOf="@+id/hospname_tv" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/timelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_tv"
+        tools:ignore="Orientation">
+
+        <TextView
+            android:id="@+id/estimated_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimated Time"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01 hr 05 min"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/estimated_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tokenlayout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/purple"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timelayout"
+        tools:ignore="Orientation">
+        <TextView
+            android:id="@+id/token_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Token No"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07"
+            android:textColor="@color/white"
+            android:textSize="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/token_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/bookapt_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want to book a appointment ?"
+        android:textColor="@color/blackg"
+        android:textSize="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tokenlayout" />
+
+    <Button
+        android:id="@+id/bookingbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Book here"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookapt_tv" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
